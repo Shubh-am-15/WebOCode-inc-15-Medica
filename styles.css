@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: 1s;
+    transition: 0.5s;
 }
 .header{
     width: 100%;
@@ -16,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: fantasy;
-    font-size: calc(7vw + 20px);
+    font-family: 'Playfair Display', serif;
+    font-size: calc(7vw + 40px);
     width: 50%;
     position: relative;
 }
@@ -34,10 +34,122 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    animation: rigthanimation linear 3s infinite;
+}
+@keyframes rigthanimation {
+    0%{transform: translateY(0%);}
+    25%{transform: translateY(-5%);}
+    50%{transform: translateY(0%);}
+    75%{transform: translateY(5%);}
+    100%{transform: translateY(0%);}
+
 }
 .right{
-    background-image: url("main1.png");
+    background-image: url("main3.png");
 }
+
+/*.right::after, .right::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+.right::before{
+    
+    
+}*/
+
+/* containers*/
+.container{
+    border: 1px solid black;
+    height:  400px;
+    margin-top: 50px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat ; 
+    transition: all 0.5s;  
+}
+.container::after{
+    content: "";
+    background-color: black;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    opacity: 0.2;
+    transition: all 1s ease-in-out;
+   
+}
+.container_text{
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: calc(4vw + 40px);
+}
+.subtitle{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vw;
+    opacity: 0;
+}
+.container:hover{
+    box-shadow: 10px 10px 10px lightslategray;
+}
+.container:hover .subtitle{
+    opacity: 1;
+}
+.container:hover::after{
+    opacity: 0.5;
+    width: 100%;
+}
+.btn{
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+}
+.thick-2 {
+    background: 
+       linear-gradient(rgb(255, 255, 255) 0 0) 
+       50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
+    transition: 0.3s, background-size 0.3s 0.3s;
+  }
+  .thick-2:hover {
+    --d: 100%;
+    background-position: 50% 0%;
+    color: rgb(0, 0, 0);
+    transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;
+  }
+/* individual containers*/
+.medicine{
+    background-image: url("medicine.jpg");
+}
+.symptoms{
+    background-image: url("symptoms.jpg");
+}
+.consult{
+    background-image: url("consult.jpg");
+}
+.exercise{
+    background-image: url("exercise.jpg");
+}
+.wellness{
+    background-image: url("wellness.jpg");
+}
+
+
+
+
 
 @media screen and (max-width:700px ){
     .header{
@@ -47,4 +159,5 @@
     .right, .left{
         height: 50%;
         width: 100%;
+}
 }
