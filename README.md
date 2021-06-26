@@ -9,3 +9,6 @@ Tech Stack used:
 *Bootstrap
 *JavaScript
 ```
+illustrations downloaded from 
+* Blush [https://blush.design/categories/healthcare]
+* Manypixels [https://www.manypixels.co]
