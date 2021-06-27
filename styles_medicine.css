@@ -85,7 +85,34 @@
     background-image: url("img/main2.png");
 }
 .container{
-    height: 700px;
+    height: auto;
+    margin-top: 50px;
+}
+.head{
+    font-size: calc(3vw + 30px);
+    text-align: center;
+    border-radius: 10px;
+    background-color:#EEF3AD ;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.info h3{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.info p{
+    font-size: 20px;
+}
+.img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(img/ayurveda.jpg);
 }
 
 .contact{
