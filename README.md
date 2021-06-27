@@ -19,6 +19,11 @@ Images downloaded from
 * Unsplash [https://unsplash.com/]
 * pixabay [https://pixabay.com/]
 
+Fonts and icons from Google fonts
+* Playfair [https://fonts.google.com/specimen/Playfair+Display?query=play]
+* Source Sans Pro [https://fonts.google.com/specimen/Source+Sans+Pro?query=sour]
+* icons [https://fonts.google.com/icons?query=sour]
+
 Modal
 * W3 schools [https://www.w3schools.com/howto/howto_css_modals.asp]
 
