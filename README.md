@@ -4,7 +4,7 @@
 
 #### *Medica* is a healthcare website, which provides you with information to keep your mind and body sound. You can also consult doctors online 24x7 for valuable advice. Its UI provides you with seamless browsing.
 
-#### The site is published at []
+#### The site is published at [https://shubh-am-15.github.io/WebOCode-inc-15-Medica/]
 #### for using on local machine just download this repository(complete) and it is ready to go with *index.html* as the first page.
 ##### *make sure you are connected to internet in boyh cases for bootstrap and icons to load.*
 
