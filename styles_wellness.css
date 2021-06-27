@@ -93,8 +93,11 @@
 .head{
     font-size: 50px;
     background-color: #EEF3AD;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 50px;
 }
+
 .contact{
     width: 100%;
     background-image: linear-gradient(to right, #516091,#05806f);
