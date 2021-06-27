@@ -1,17 +1,13 @@
-/* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
   
-  /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
   var header=document.getElementsByClassName("medicine")[0];
-// window.onscroll=function() {position()};
 mybutton = document.getElementById("brand");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -22,24 +18,51 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
+function about() {
+    closeNav();
+  document.body.scrollTop = 450; 
+  document.documentElement.scrollTop = 450;
+}
+var ser=document.getElementsByClassName("medicine")[0];
 function services() {
     closeNav();
-  document.body.scrollTop = 450; // For Safari
-  document.documentElement.scrollTop = 450; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = ser.offsetTop; 
+  document.documentElement.scrollTop = ser.offsetTop;
 }
 var con=document.getElementsByClassName("consult")[0];
 function consult() {
     closeNav();
-  document.body.scrollTop = con.offsetTop; // For Safari
-  document.documentElement.scrollTop = con.offsetTop; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = con.offsetTop; 
+  document.documentElement.scrollTop = con.offsetTop;
 }
 var cont=document.getElementsByClassName("contact")[0];
 function contact() {
     closeNav();
-  document.body.scrollTop = cont.offsetTop; // For Safari
-  document.documentElement.scrollTop = cont.offsetTop; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 3350; 
+  document.documentElement.scrollTop = 3350; 
 }
+console.log(cont.offsetTop);
+
 function home(){
     location.href="index.html";
+}
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

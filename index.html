@@ -39,10 +39,11 @@
   
     <!-- Overlay content -->
     <div class="overlay-content">
-      <a href="index.html" class="thick-2">Home</a>
-      <a href="#" onclick="services()" class="thick-2">Services</a>
-      <a href="#" onclick="consult()" class="thick-2">Consult</a>
-      <a href="#" onclick="contact()" class="thick-2">Contact</a>
+        <button href="index.html" class="thick-2">Home</button>
+        <button  onclick="about()" class="thick-2">About</button>
+        <button  onclick="services()" class="thick-2">Services</button>
+      <button  onclick="consult()" class="thick-2">Consult</button>
+      <button  onclick="contact()" class="thick-2">Contact</button>
     </div>
   
   </div>
@@ -56,12 +57,22 @@
 
     <div class="header">
         <div class="left">
-            <p><span>M</span>edica</p>
+            <p class="title"><span>M</span>edica</p>
+            <p class="subtitle">We care for you.</p>
 
         </div>
         <div class="right">
         </div>
     </div>
+    <div class="about">
+        <div class="container_text">
+            <p class="title">About</p>
+            <p class="subtitle"> We at medica try to provide you informatoion about how to take care of you body and mind.</p>
+            
+
+        </div>
+    </div>
+
     <!--    //////////////       -->
     <div class="container medicine">
         <div class="container_text">
@@ -76,16 +87,28 @@
         <div class="container_text">
             <p class="title">Symptoms</p>
             <p class="subtitle"> Know what you consume.</p>
-            <a href="#"><button class="btn thick-2">Know more</button></a>
+            <button id="myBtn" class="btn thick-2">Know more</button>
 
         </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="title">This page is not ready </p>
+    <p class="subtitle">Follow Medica and I am sure you will not require this page!</p>
+  </div>
+
+</div>
     </div>
     <!--    //////////////       -->
      <div class="container exercise">
         <div class="container_text">
             <p class="title">Exercise</p>
-            <p class="subtitle"> Know what you consume.</p>
-            <a href="#"><button class="btn thick-2">Know more</button></a>
+            <p class="subtitle"> Lets give a gift to your body!</p>
+            <a href="index_exercise.html"><button class="btn thick-2">Know more</button></a>
 
         </div>
     </div>
@@ -93,15 +116,15 @@
      <div class="container wellness">
         <div class="container_text">
             <p class="title">Wellness</p>
-            <p class="subtitle"> Know what you consume.</p>
-            <a href="#"><button class="btn thick-2">Know more</button></a>
+            <p class="subtitle"> A step towards healthy mind.</p>
+            <a href="index_wellness.html"><button class="btn thick-2">Know more</button></a>
 
         </div>
     </div>
     <div class="container consult">
         <div class="container_text">
             <p class="title">Consult</p>
-            <p class="subtitle"> Know what you consume.</p>
+            <p class="subtitle"> Consult doctors online 24x7</p>
             <a href="index_consult.html"><button class="btn thick-2">Know more</button></a>
 
         </div>
