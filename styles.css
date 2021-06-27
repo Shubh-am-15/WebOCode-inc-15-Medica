@@ -163,12 +163,13 @@
 
 /* containers*/
 .container{
-    border: 1px solid black;
+    
     height:  400px;
     margin-top: 50px ;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
     position: relative;
     background-position: center center;
     background-size: cover;
@@ -262,6 +263,9 @@
 }
 .medicine{
     background-image: url("img/medicine.jpg");
+}
+.balance{
+    background-image: url("img/balance.jpg");
 }
 .symptoms{
     background-image: url("img/symptoms.jpg");

@@ -66,3 +66,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+var i=0;
+setInterval(background(),2000);
+let arr=["img/cereals-563796_1280.jpg","berries-2277_1280.jpg"]
+function background(){
+   document.getElementsByClassName("img")[0].style.backgroundImage = `url('arr[i]')`;
+   console.log(i);
+   i++;
+   if(i==1){
+     i=0;
+   }
+}
